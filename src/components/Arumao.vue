@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TransitionPresets } from '@vueuse/core'
+import { Howl } from 'howler'
 
 const target = ref<HTMLElement>()
 const { pressed } = useMousePressed({ target })
@@ -35,6 +36,14 @@ const onPress = () => {
     const idx = queues.indexOf(queue)
     queues.splice(idx, 1)
   }, duration.value)
+
+  const howl = new Howl({
+    src: '/audio/267887__wjl__short-fireball-woosh.flac',
+    autoplay: false,
+    loop: false,
+    volume: active.value ? 0.25 : 0.05,
+  })
+  howl.play()
 }
 
 watch(isPressed, (newValue) => {

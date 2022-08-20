@@ -7,11 +7,10 @@ import postcssNested from 'postcss-nested'
 import { resolve } from 'node:path'
 
 // https://vitejs.dev/config/
-export default ({ mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, process.cwd()) }
-
-  return defineConfig({
-    base: process.env.BASE_URL,
+export default defineConfig(({ command, mode }) => {
+  const env = loadEnv(mode, process.cwd(), '')
+  return {
+    base: env.BASE_URL,
     plugins: [
       vue(),
       // https://github.com/antfu/unplugin-auto-import
@@ -37,5 +36,5 @@ export default ({ mode }) => {
         '@/': `${resolve(__dirname, './src')}/`,
       },
     },
-  })
-}
+  }
+})

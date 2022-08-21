@@ -5,12 +5,9 @@ import Arumao from '@/components/Arumao.vue'
 
 <template>
   <Navbar />
-  <!-- <main class="flex flex-col justify-end items-stretch basis-50vh flex-shrink"> -->
-  <main class="mt-auto basis-70vh flex justify-center items-stretch">
-    <Arumao class="flex items-stretch" />
+  <main class="mt-auto flex flex-col justify-start items-center">
+    <Arumao />
   </main>
-  <!-- <Arumao class="mt-auto basis-50vh flex-grow flex flex-col items-center" /> -->
-  <!-- </main> -->
 </template>
 
 <style scoped>

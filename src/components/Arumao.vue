@@ -56,19 +56,19 @@ watch(isPressed, (newValue) => {
 <template>
   <div
     ref="target"
-    class="relative overflow-visible select-none transition-transform duration-100 ease-in-out animate-faster animate-infinite flex  items-stretch"
+    class="relative overflow-visible select-none transition-transform duration-100 ease-in-out animate-faster animate-infinite"
     :class="{ pressed: isPressed, active }"
   >
     <div>
       <img
         v-if="isPressed || active" src="@/assets/image/aru_laugh.png" draggable="false"
-        class="object-cover w-full h-full"
+        class="object-contain w-full h-full"
       />
-      <img v-else src="@/assets/image/aru_normal.png" draggable="false" class="object-cover w-full h-full" />
+      <img v-else src="@/assets/image/aru_normal.png" draggable="false" class="object-contain w-full h-full" />
     </div>
 
     <img
-      src="@/assets/image/mao.png" draggable="false" class="object-contain mao absolute top-0"
+      src="@/assets/image/mao.png" draggable="false" class="object-contain w-full h-full mao absolute top-0"
       :style="`transform: rotate(${turn}turn) ${active ? 'scale(2)' : ''};`"
     />
 

@@ -42,7 +42,7 @@ const onPress = () => {
     src: sound,
     autoplay: false,
     loop: false,
-    volume: active.value ? 0.25 : 0.05,
+    volume: active.value ? 0.03 : 0.015,
   })
   howl.play()
 }

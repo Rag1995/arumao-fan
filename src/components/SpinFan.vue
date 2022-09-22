@@ -33,13 +33,13 @@ const styles = computed(() => {
     <img v-if="active || intense" :src="activeImage" draggable="false" />
     <img v-else :src="normalImage" draggable="false" />
 
-    <img :src="spinImage" draggable="false" :style="styles" />
+    <img :src="spinImage" draggable="false" :style="styles" class="absolute" />
   </div>
 </template>
 
 <style lang="postcss" scope>
 img {
-  @apply object-cover absolute -bottom-10px;
+  @apply object-cover -bottom-10px;
   object-position: 50% 100%;
 }
 .active {

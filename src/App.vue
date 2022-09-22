@@ -80,9 +80,8 @@ watch(isPressed, (newValue) => {
           activeImage,
           spinImage,
         }"
-        class="basis-300px"
       />
     </template>
-    <ClickCount :active="isPressed" :count="count" class="absolute left-0 right-0 bottom-1/20" />
+    <ClickCount :active="isPressed" :count="count" class="absolute left-0 right-0 bottom-0.25em" />
   </main>
 </template>

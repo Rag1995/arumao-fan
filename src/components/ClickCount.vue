@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div
-    class="stroke-dark-900 stroke-9 font-titanOne text-8xl  text-center animate-animated animate-faster"
+    class="text-stroke-dark-900 text-stroke-5 text-light-500 font-titanOne text-8xl  text-center animate-animated animate-faster"
     :class="{ 'animate-shakeY': active }"
   >
     {{ count }}

@@ -14,10 +14,13 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@cp/*": ["src/components/*"],
+      "@img/*": ["src/assets/images/*"],
+      "@audio/*": ["src/assets/audio/*"]
     },
     "types": ["node", "unplugin-icons/types/vue"],
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","src/assets/**/*.png","src/assets/**/*.flac"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -7,7 +7,7 @@ import postcssNested from 'postcss-nested'
 import { resolve } from 'node:path'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     base: env.BASE_URL,
@@ -34,6 +34,9 @@ export default defineConfig(({ command, mode }) => {
     resolve: {
       alias: {
         '@/': `${resolve(__dirname, './src')}/`,
+        '@cp/': `${resolve(__dirname, './src/components')}/`,
+        '@img/': `${resolve(__dirname, './src/assets/images')}/`,
+        '@audio/': `${resolve(__dirname, './src/assets/audio')}/`,
       },
     },
   }

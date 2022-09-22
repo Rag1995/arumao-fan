@@ -6,7 +6,9 @@ export default defineConfig({
   darkMode: 'class',
   theme: {
     extend: {
-      //
+      fontFamily: {
+        titanOne: ['Titan One', 'cursive'],
+      },
     },
   },
   plugins: [
@@ -16,14 +18,6 @@ export default defineConfig({
     plugin(({ addComponents }) => {
       const custom = {
         '.btn': {
-          padding: '.5rem .75rem',
-          borderRadius: '.25rem',
-          fontWeight: '600',
-          display: 'flex',
-          flexFlow: 'row nowrap',
-          placeItems: 'center',
-        },
-        '.nav-item': {
           padding: '.5rem .75rem',
           borderRadius: '.25rem',
           fontWeight: '600',

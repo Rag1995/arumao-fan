@@ -12,6 +12,7 @@
     "@vueuse/components": "^9.1.0",
     "@vueuse/core": "^9.1.0",
     "howler": "^2.2.3",
+    "pinia": "^2.0.22",
     "vue": "^3.2.37"
   },
   "devDependencies": {

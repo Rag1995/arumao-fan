@@ -43,7 +43,7 @@ export const useStore = defineStore('main', () => {
       normalImage: ImgKamitaniNormal,
       activeImage: ImgKamitaniActive,
       spinImage: ImgKamitaniSpin,
-      originLeft: 49,
+      originLeft: 47.5,
       originTop: 21,
     },
   ])

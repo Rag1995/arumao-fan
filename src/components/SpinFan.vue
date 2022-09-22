@@ -30,9 +30,8 @@ const styles = computed(() => {
 
 <template>
   <div class="relative transition-all animate-animated animate-infinite" :class="{ active, intense }">
-    <img :src="normalImage" draggable="false" :class="{ hidden: active }" />
-
-    <img :src="activeImage" draggable="false" :class="{ hidden: !active }" />
+    <img v-if="!active" :src="normalImage" draggable="false" />
+    <img v-else :src="activeImage" draggable="false" />
 
     <img :src="spinImage" draggable="false" :style="styles" />
   </div>

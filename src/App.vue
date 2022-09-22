@@ -66,7 +66,7 @@ watch(isPressed, (newValue) => {
   <AppNavbar />
   <main
     ref="target"
-    class="flex-grow relative overflow-hidden flex flex-row flex-nowrap justify-center items-end bg-red-500"
+    class="flex-grow relative overflow-hidden flex flex-row flex-nowrap justify-center items-end"
   >
     <template v-for="({ normalImage, activeImage, spinImage, originLeft, originTop }, idx) in vtubers" :key="idx">
       <SpinFan
